@@ -6,6 +6,8 @@ def add_it_up(first: int, second: int):
 
 
 def find_distance(point1, point2):
+    if len(point1) != 2 or len(point2) !=2:
+        raise ValueError
     delta_x = point1[0]-point2[0]
     delta_y = point1[1]-point2[1]
     result = math.sqrt(delta_x*delta_x+delta_y*delta_y)
